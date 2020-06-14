@@ -1,5 +1,6 @@
 [
     {
+        "name": "default",
         "type": "postgres",
         "host": "localhost",
         "port": 5432,
@@ -10,6 +11,7 @@
         "synchronize": true
     },
     {
+        "name": "heroku-conn",
         "type": "postgres",
         "url":"postgres://xefhvogmpkwayh:82d303cf2fd5322867123fc938f58c9ab14941b12d3d34090bd67c999ead84e0@ec2-34-197-141-7.compute-1.amazonaws.com:5432/d5uv77648eijic"
     }
