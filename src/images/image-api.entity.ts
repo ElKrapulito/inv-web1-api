@@ -1,4 +1,5 @@
-import { Entity, PrimaryColumn, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Exclude } from 'class-transformer';
 
 @Entity({
     name:'images'
@@ -12,9 +13,12 @@ export class ImageApi{
 
     @Column({
         type:'bytea'
-    })
+    }) 
+    @Exclude()
     imgFile:any
 
     @Column()
     contentType:string
+
+    url:string;
 }
